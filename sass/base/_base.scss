@@ -3,4 +3,12 @@ body{
     width: 375px;
     padding: 0.5px;
     display: flex;
+    flex-direction: column;
+}
+
+ul, li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0rem;
+    margin: 0rem;
 }

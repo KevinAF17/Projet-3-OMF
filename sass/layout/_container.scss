@@ -1,0 +1,35 @@
+.fct
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    counter-reset: numbers;
+    &_titre-menus{
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+    }
+    &_ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        margin-left: 1.5px;
+        margin-right: 1.5px
+    }
+    &_f-btn{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding-bottom: 16px;
+    }
+    &__list{
+            content: counter(numbers);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 1rem;
+    }
+}
