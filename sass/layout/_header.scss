@@ -1,0 +1,38 @@
+.header
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    &_Lieu{
+        border-top: rgba(0, 0, 0, 0.062) 2px solid;
+        margin-top: 2px;
+        background-color: rgba(230, 230, 230, 0.801);
+        display: flex;
+        justify-content: center;
+        font-family: "Roboto";
+        font-weight: bold;
+        color: black;
+        width: 350px;
+    }
+    &_input-accueil{
+        background-color: #ebebeb;
+        border: none;
+        font-family: "Roboto";
+        width: 9rem;
+        font-size: 1rem;
+        &::placeholder{
+            margin-left: 3px;
+            color: rgb(43, 43, 43);
+            font-weight: 550;
+        }
+    }
+    &_reservationOmF{
+        display: flex;
+        font-family: 'Roboto';
+        flex-direction: column;
+        text-align: center;
+        width: 350px;
+        background-color: #f6f6f6;
+    }
+}
