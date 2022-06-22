@@ -4,11 +4,16 @@ body{
     padding: 0.5px;
     display: flex;
     flex-direction: column;
+    color: black;
 }
 
 ul, li{
     text-decoration: none;
-    list-style-type: none;
     padding: 0rem;
     margin: 0rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

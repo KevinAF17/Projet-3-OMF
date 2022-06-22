@@ -32,3 +32,25 @@ h2{
     margin-right: 2px;
     margin-bottom: 5px;
 }
+
+.p-menus-titre
+{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 550;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    margin-left: 16px;
+}
+
+.p-menus-txt
+{
+    font-family: "Roboto";
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+}

@@ -3,33 +3,94 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    counter-reset: numbers;
+    justify-content: space-between;
+    margin-left: 6.5px;
     &_titre-menus{
-    margin-left: 1.5px;
+    margin-left: 8.5px;
     margin-right: 1.5px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 550;
+    }
+    &_numbers{
+       margin-left: -10px;
+       margin-top: 18.7px;
+       width: 20px;
+       height: 20px;
+       border-radius: 10px;
+       background: $colour-primary;
+       color: white;
+       display: flex;
+       align-content: center;
+    }
+    &_numbers-st{
+        margin-left: 6.5px;
+        margin-top: 1.9px;
+    }
+    &_icons
+    {
+        margin-top: 18.7px;
+        margin-left: 17.5px;
+        margin-right: 10px;
+        font-size: medium;
+        color: grey;
+        align-items: center;
+    }
+    &_1,&_2,&_3
+    {
+        display: flex;
+        width: 350px;
+        font-family: "Roboto";
+        font-weight: 500;
+        text-align: left;
     }
     &_ul{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
-        margin-left: 1.5px;
+        border-radius: 90px;
+        margin-left: 3.5px;
         margin-right: 1.5px
     }
-    &_f-btn{
+   
+}
+
+.restos{
+    background-color: #f6f6f6;
+    width: 100%;
+    padding-bottom: 32px;
+    &_titre-sct{
+    margin-left: 3.5px;
+    margin-top: 32px;
+    font-size: 32px;
+    font-weight: 550;
+    font-family: "Roboto";
+    }
+    &_cartes-menus{
         display: flex;
         flex-direction: column;
-        width: auto;
-        padding-bottom: 16px;
+        width: 330px;
+        margin-left: 16px;
+        margin-right: 32px;
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
-    &__list{
-            content: counter(numbers);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 0.8rem;
-            width: 1.5rem;
-            height: 1.5rem;
-            border-radius: 1rem;
+}
+
+.menus{
+    &_img{
+    width: 330px;
+    height: 150px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    object-fit: cover;
+    }
+}
+
+.m-containers{
+    background-color: white;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    &_icons{
+        font-size: medium;
+        display: flex;
+        justify-content: right;
     }
 }
