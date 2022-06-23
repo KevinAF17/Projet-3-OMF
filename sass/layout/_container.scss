@@ -14,7 +14,7 @@
     }
     &_numbers{
        margin-left: -10px;
-       margin-top: 18.7px;
+       margin-top: 19.7px;
        width: 20px;
        height: 20px;
        border-radius: 10px;
@@ -29,12 +29,11 @@
     }
     &_icons
     {
-        margin-top: 18.7px;
+        margin-top: 19.7px;
         margin-left: 17.5px;
         margin-right: 10px;
-        font-size: medium;
+        font-size: 17.5px;
         color: grey;
-        align-items: center;
     }
     &_1,&_2,&_3
     {
@@ -48,13 +47,13 @@
         border-radius: 90px;
         margin-left: 3.5px;
         margin-right: 1.5px
-    }
-   
+    }  
 }
 
 .restos{
     background-color: #f6f6f6;
     width: 100%;
+    padding-top: 12px;
     padding-bottom: 32px;
     &_titre-sct{
     margin-left: 3.5px;
@@ -63,12 +62,21 @@
     font-weight: 550;
     font-family: "Roboto";
     }
-    &_cartes-menus{
+    &_menus-restaurants{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 330px;
         margin-left: 16px;
         margin-right: 32px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
+    &_cartes-menus{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 330px;
         margin-top: 16px;
         margin-bottom: 16px;
     }
@@ -86,11 +94,22 @@
 
 .m-containers{
     background-color: white;
+    padding-bottom: 8px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
-    &_icons{
-        font-size: medium;
-        display: flex;
-        justify-content: right;
+}
+
+.containers-icon{
+    float: right;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: -40px;
+    margin-right: 20px;
+    padding: 0px;
+    &:hover{
+        cursor: pointer;
+        color: $colour-primary;
     }
 }
