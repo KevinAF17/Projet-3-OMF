@@ -18,3 +18,26 @@ ul, li{
 {
     margin-right: 8px;
 }
+
+.lien{
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-decoration: none;
+    color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    height: 215px;
+    cursor: pointer;
+    border: none;
+}
+
+.space
+{
+    margin: 10px;
+    &_2{
+        margin: 20px;
+    }
+}

@@ -64,6 +64,7 @@
     }
     &_menus-restaurants{
         display: flex;
+        align-items: center;
         flex-direction: column;
         justify-content: space-between;
         width: 330px;
@@ -75,10 +76,11 @@
     &_cartes-menus{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        text-decoration: none;
+        color: black;
         width: 330px;
-        margin-top: 16px;
-        margin-bottom: 16px;
+        height: 210px;
+        background-color: white;
     }
 }
 
@@ -88,36 +90,48 @@
     height: 150px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    margin-bottom: 0px;
     object-fit: cover;
     }
+    &_img2{
+        width: 330px;
+        height: 150px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        margin-top: -30px;
+        margin-bottom: 0px;
+        object-fit: cover;
+        }
 }
 
-.m-containers{
-    background-color: white;
-    padding-bottom: 8px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-}
 
 .containers-icon{
     float: right;
-    display: flex;
-    justify-content: center;
     cursor: pointer;
     font-size: 25px;
-    margin-top: -40px;
-    margin-right: 20px;
+    margin-top: -30px;
+    margin-left: 290px;
     padding: 0px;
+    width: 30px;
     &:hover{
         cursor: pointer;
         color: $colour-primary;
     }
 }
 
-.lien{
-    text-decoration: none;
-    color: black;
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 298px;
+.badgenv
+{
+    display: flex;
+    float: right;
+    position: relative;
+    font-family: "Roboto";
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    left: 235px;
+    top: 15px;
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color: $colour-tertiary;
 }
