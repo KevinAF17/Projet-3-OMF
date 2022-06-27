@@ -17,15 +17,30 @@ ul, li {
   margin: 0rem;
 }
 
-a {
+.fa-solid {
+  margin-right: 8px;
+}
+
+.lien {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   text-decoration: none;
   color: black;
   margin-left: 0px;
   margin-right: 0px;
+  margin-top: 0px;
+  height: 215px;
+  cursor: pointer;
+  border: none;
 }
 
-.fa-solid {
-  margin-right: 8px;
+.space {
+  margin: 10px;
+}
+.space_2 {
+  margin: 20px;
 }
 
 p {
@@ -48,7 +63,14 @@ p {
   font-size: 1.8rem;
   font-weight: 550;
   margin-left: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.p-ticket {
+  margin-left: 9px;
+  margin-right: 9px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 h1 {
@@ -91,16 +113,16 @@ h3 {
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 550;
-  margin-top: 12px;
-  margin-bottom: 4px;
+  margin-top: 10px;
+  margin-bottom: 3px;
   margin-left: 16px;
 }
 
 .p-menus-txt {
   font-family: "Roboto";
   font-size: 12px;
-  margin-top: 4px;
-  margin-bottom: 8px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -184,6 +206,11 @@ h3 {
   padding-bottom: 12px;
 }
 
+.header-restos {
+  font-family: "Roboto";
+  font-size: 1.8rem;
+}
+
 .fct {
   display: flex;
   width: 100%;
@@ -248,6 +275,7 @@ h3 {
 }
 .restos_menus-restaurants {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
   width: 330px;
@@ -259,10 +287,11 @@ h3 {
 .restos_cartes-menus {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  text-decoration: none;
+  color: black;
   width: 330px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  height: 210px;
+  background-color: white;
 }
 
 .menus_img {
@@ -270,29 +299,47 @@ h3 {
   height: 150px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  margin-bottom: 0px;
   object-fit: cover;
 }
-
-.m-containers {
-  background-color: white;
-  padding-bottom: 8px;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
+.menus_img2 {
+  width: 330px;
+  height: 150px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-top: -30px;
+  margin-bottom: 0px;
+  object-fit: cover;
 }
 
 .containers-icon {
   float: right;
-  display: flex;
-  justify-content: center;
   cursor: pointer;
   font-size: 25px;
-  margin-top: -40px;
-  margin-right: 20px;
+  margin-top: -30px;
+  margin-left: 290px;
   padding: 0px;
+  width: 30px;
 }
 .containers-icon:hover {
   cursor: pointer;
   color: #9356DC;
+}
+
+.badgenv {
+  display: flex;
+  float: right;
+  position: relative;
+  font-family: "Roboto";
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+  left: 235px;
+  top: 15px;
+  width: 80px;
+  height: 30px;
+  color: white;
+  background-color: #99E2D0;
 }
 
 .footerOmF {
