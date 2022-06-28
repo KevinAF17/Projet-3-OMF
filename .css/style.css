@@ -17,6 +17,11 @@ ul, li {
   margin: 0rem;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .fa-solid {
   margin-right: 8px;
 }
@@ -127,6 +132,27 @@ h3 {
   margin-right: 16px;
 }
 
+.p-menus-titre2 {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 550;
+  padding-top: 5px;
+  margin-top: 0px;
+  margin-bottom: 3px;
+  margin-left: 16px;
+}
+
+.p-menus-txt2 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-right: 16px;
+}
+
 .btn {
   background-color: #9356DC;
   color: white;
@@ -161,6 +187,33 @@ h3 {
   border-radius: 16px;
   margin-bottom: 32px;
   cursor: pointer;
+}
+
+.btn2 {
+  background-color: #9356DC;
+  color: white;
+  font-weight: 500;
+  padding: 3px;
+  border-radius: 100px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-top: 48px;
+  margin-left: 97.5px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.btn2_btn2-txt {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 15.5px;
+  display: flex;
+  text-align: center;
+  margin-left: 23px;
+  margin-right: 23px;
 }
 
 .header {
@@ -209,6 +262,89 @@ h3 {
 .header-restos {
   font-family: "Roboto";
   font-size: 1.8rem;
+}
+
+.header-menus {
+  display: flex;
+  flex-direction: row;
+}
+.header-menus_title {
+  display: flex;
+  margin-left: 30px;
+  font-size: 2.5rem;
+}
+.header-menus_icons {
+  display: flex;
+  margin-top: 22px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.background-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 240px;
+  position: relative;
+  object-fit: cover;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.cartes-menus {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  margin-top: 16px;
+  padding-bottom: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: #f6f6f6;
+}
+.cartes-menus_header {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 32px;
+  margin-left: 16px;
+  font-family: "Shrikland";
+  font-size: 1.6rem;
+}
+.cartes-menus_h1-header {
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-top: 20px;
+}
+.cartes-menus_icons1 {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  margin-top: 20px;
+}
+.cartes-menus_ent, .cartes-menus_men, .cartes-menus_dess {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+}
+.cartes-menus_p1-ent, .cartes-menus_p1-men, .cartes-menus_p1-dess {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 4px;
+  width: 40px;
+}
+.cartes-menus_recipe-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 350px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 16px;
+}
+.cartes-menus_recipecard-txt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20px;
 }
 
 .fct {
@@ -291,6 +427,7 @@ h3 {
   color: black;
   width: 330px;
   height: 210px;
+  border-radius: 16px;
   background-color: white;
 }
 
