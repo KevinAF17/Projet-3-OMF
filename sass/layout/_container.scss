@@ -107,16 +107,18 @@
 
 
 .containers-icon{
-    float: right;
+    display: flex;
+    flex-direction: row;
     cursor: pointer;
     font-size: 25px;
     margin-top: -30px;
     margin-left: 290px;
     padding: 0px;
-    width: 30px;
+    width: 25px;
     &:hover{
         cursor: pointer;
         color: $colour-primary;
+        transition-duration: .25s;
     }
 }
 
@@ -133,6 +135,6 @@
     top: 15px;
     width: 80px;
     height: 30px;
-    color: white;
+    color: darken($color: $colour-tertiary, $amount: 40);
     background-color: $colour-tertiary;
 }
