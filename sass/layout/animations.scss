@@ -1,0 +1,29 @@
+/* keyframe menu*/
+@keyframes menudelay{
+    from{ 
+        transition: all 1s;
+        margin-top: 3rem;
+        opacity: 0;
+    }
+    to{
+        transition: all 1s;
+        margin-top: 0rem;
+        opacity: 1;
+    }
+}
+
+@keyframes appear
+{
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+
+

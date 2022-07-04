@@ -22,10 +22,6 @@ a {
   text-decoration: none;
 }
 
-.fa-solid {
-  margin-right: 8px;
-}
-
 .lien {
   display: flex;
   flex-direction: column;
@@ -54,7 +50,7 @@ p {
 
 .p-rsrv {
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   margin-left: 10px;
   margin-right: 5px;
 }
@@ -153,6 +149,15 @@ h3 {
   margin-right: 16px;
 }
 
+.fa-regular {
+  font-weight: 800;
+}
+
+.fa-solid {
+  margin-right: 8px;
+  font-weight: 700;
+}
+
 .btn {
   background-color: #9356DC;
   color: white;
@@ -221,7 +226,7 @@ h3 {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  margin: 5.5px;
+  margin: 0px;
 }
 .header_Lieu {
   border-top: rgba(0, 0, 0, 0.062) 2px solid;
@@ -281,50 +286,45 @@ h3 {
   font-size: 1.5rem;
 }
 
-.background-img {
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 240px;
-  position: relative;
-  object-fit: cover;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .cartes-menus {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  width: 100%;
-  margin-top: 16px;
-  padding-bottom: 16px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  position: relative;
   background-color: #f6f6f6;
+  z-index: 1;
+}
+.cartes-menus_background-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
 }
 .cartes-menus_header {
   display: flex;
-  justify-content: space-between;
-  margin-right: 32px;
-  margin-left: 16px;
-  font-family: "Shrikland";
-  font-size: 1.6rem;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  margin: -50px 0 25px;
+  padding-top: 10px;
+  background-color: #f6f6f6;
 }
 .cartes-menus_h1-header {
   font-size: 1.6rem;
   font-weight: 200;
-  margin-top: 20px;
+  margin: 20px 0 -15px -25px;
 }
 .cartes-menus_icons1 {
   font-size: 1.6rem;
   font-weight: lighter;
   margin-top: 20px;
+  margin-right: -20px;
 }
 .cartes-menus_ent, .cartes-menus_men, .cartes-menus_dess {
   margin-left: 10px;
   margin-right: 10px;
   width: 100%;
+  animation: appear 0.6s both;
 }
 .cartes-menus_p1-ent, .cartes-menus_p1-men, .cartes-menus_p1-dess {
   border-bottom: 3px solid #99E2D0;
@@ -339,12 +339,25 @@ h3 {
   height: 50px;
   margin-bottom: 10px;
   border-radius: 16px;
+  animation: appear 0.6s both;
 }
 .cartes-menus_recipecard-txt {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 20px;
+}
+
+.confirm {
+  display: block;
+  background-color: #99E2D0;
+  height: 50px;
+  width: 50px;
+  border-radius: 0 15px 15px 0;
+  padding: 10px;
+  transform: scaleX(0);
+  transition: 300ms ease-in-out;
+  transform-origin: right;
 }
 
 .fct {
@@ -454,15 +467,33 @@ h3 {
   flex-direction: row;
   cursor: pointer;
   font-size: 25px;
-  margin-top: -30px;
+  margin-top: -29px;
   margin-left: 290px;
   padding: 0px;
   width: 25px;
+  color: black;
 }
 .containers-icon:hover {
   cursor: pointer;
   color: #9356DC;
-  transition-duration: 0.25s;
+  transition-duration: 0.5s;
+}
+
+.containers-icon2 {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  font-size: 19px;
+  margin-top: 3px;
+  margin-left: -30.2px;
+  padding: 0px;
+  width: 25px;
+  color: white;
+}
+.containers-icon2:hover {
+  cursor: pointer;
+  color: #9356DC;
+  transition-duration: 0.5s;
 }
 
 .badgenv {
@@ -486,6 +517,30 @@ h3 {
   background-color: black;
   color: white;
   padding-bottom: 10px;
+}
+
+/* keyframe menu*/
+@keyframes menudelay {
+  from {
+    transition: all 1s;
+    margin-top: 3rem;
+    opacity: 0;
+  }
+  to {
+    transition: all 1s;
+    margin-top: 0rem;
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
