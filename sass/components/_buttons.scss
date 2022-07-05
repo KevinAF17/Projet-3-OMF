@@ -1,6 +1,6 @@
 .btn
 {
-    background-color: $colour-primary;
+    background: linear-gradient($colour-secondary, $colour-primary);
     color: white;
     font-weight: 500;
     padding: 3px;
@@ -38,7 +38,7 @@
 
 .btn2
 {
-    background-color: $colour-primary;
+    background: linear-gradient($colour-secondary, $colour-primary);
     color: white;
     font-weight: 500;
     padding: 3px;

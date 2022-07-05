@@ -23,7 +23,7 @@
    &_h1-header{
     font-size: 1.6rem;
     font-weight: 200;
-    margin: 20px 0 -15px -25px;
+    margin: 20px -20px -15px -15px;
    }
    &_icons1
    {
@@ -37,7 +37,9 @@
     margin-left: 10px;
     margin-right: 10px;
     width: 100%;
-    animation: appear .6s both;
+    animation: appear .9s both;
+    animation-fill-mode: both;
+    transform: scale(0);
    }
    &_p1-ent, &_p1-men, &_p1-dess
    {
@@ -50,29 +52,16 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 350px;
+    width: 95%;
     height: 50px;
     margin-bottom: 10px;
     border-radius: 16px;
-    animation: appear .6s both;
    }
    &_recipecard-txt
    {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 20px;
+    height: 50px;
    }
-}
-
-.confirm{
-   display: block;
-   background-color: $colour-tertiary;
-   height: 50px;
-   width: 50px;
-   border-radius: 0 15px 15px 0;
-   padding: 10px;
-   transform: scaleX(0);
-   transition: 300ms ease-in-out;
-   transform-origin: right;
 }

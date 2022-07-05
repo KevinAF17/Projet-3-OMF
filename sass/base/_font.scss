@@ -118,13 +118,14 @@ h3
     margin-right: 16px;
 }
 
-.fa-regular
-{
-    font-weight: 800;
-}
-
 .fa-solid
 {
-    margin-right: 8px;
-    font-weight: 700;
+    font-weight: 400px;
+&:hover{
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, $colour-secondary, $colour-primary);
+        animation: heart-fillin;
+        transition-duration: 1s;
+}
 }

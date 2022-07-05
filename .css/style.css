@@ -149,17 +149,19 @@ h3 {
   margin-right: 16px;
 }
 
-.fa-regular {
-  font-weight: 800;
-}
-
 .fa-solid {
-  margin-right: 8px;
-  font-weight: 700;
+  font-weight: 400px;
+}
+.fa-solid:hover {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  animation: heart-fillin;
+  transition-duration: 1s;
 }
 
 .btn {
-  background-color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   font-weight: 500;
   padding: 3px;
@@ -195,7 +197,7 @@ h3 {
 }
 
 .btn2 {
-  background-color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   font-weight: 500;
   padding: 3px;
@@ -312,7 +314,7 @@ h3 {
 .cartes-menus_h1-header {
   font-size: 1.6rem;
   font-weight: 200;
-  margin: 20px 0 -15px -25px;
+  margin: 20px -20px -15px -15px;
 }
 .cartes-menus_icons1 {
   font-size: 1.6rem;
@@ -324,7 +326,9 @@ h3 {
   margin-left: 10px;
   margin-right: 10px;
   width: 100%;
-  animation: appear 0.6s both;
+  animation: appear 0.9s both;
+  animation-fill-mode: both;
+  transform: scale(0);
 }
 .cartes-menus_p1-ent, .cartes-menus_p1-men, .cartes-menus_p1-dess {
   border-bottom: 3px solid #99E2D0;
@@ -335,29 +339,16 @@ h3 {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 350px;
+  width: 95%;
   height: 50px;
   margin-bottom: 10px;
   border-radius: 16px;
-  animation: appear 0.6s both;
 }
 .cartes-menus_recipecard-txt {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 20px;
-}
-
-.confirm {
-  display: block;
-  background-color: #99E2D0;
   height: 50px;
-  width: 50px;
-  border-radius: 0 15px 15px 0;
-  padding: 10px;
-  transform: scaleX(0);
-  transition: 300ms ease-in-out;
-  transform-origin: right;
 }
 
 .fct {
@@ -474,26 +465,19 @@ h3 {
   color: black;
 }
 .containers-icon:hover {
-  cursor: pointer;
-  color: #9356DC;
-  transition-duration: 0.5s;
+  color: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
 
 .containers-icon2 {
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  font-size: 19px;
-  margin-top: 3px;
-  margin-left: -30.2px;
+  font-size: 25px;
+  margin-top: -29px;
+  margin-left: 290px;
   padding: 0px;
   width: 25px;
   color: white;
-}
-.containers-icon2:hover {
-  cursor: pointer;
-  color: #9356DC;
-  transition-duration: 0.5s;
 }
 
 .badgenv {
@@ -520,18 +504,6 @@ h3 {
 }
 
 /* keyframe menu*/
-@keyframes menudelay {
-  from {
-    transition: all 1s;
-    margin-top: 3rem;
-    opacity: 0;
-  }
-  to {
-    transition: all 1s;
-    margin-top: 0rem;
-    opacity: 1;
-  }
-}
 @keyframes appear {
   0% {
     transform: translateY(50%);
@@ -540,6 +512,14 @@ h3 {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes heart-fillin {
+  from {
+    margin-bottom: 0%;
+  }
+  to {
+    margin-bottom: 100%;
   }
 }
 
