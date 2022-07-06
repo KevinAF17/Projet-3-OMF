@@ -125,7 +125,7 @@ h3
         color: transparent;
         background-clip: text;
         background-image: linear-gradient(to bottom, $colour-secondary, $colour-primary);
-        animation: heart-fillin;
         transition-duration: 1s;
+        opacity: 1;
 }
 }
