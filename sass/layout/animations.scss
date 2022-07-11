@@ -1,4 +1,15 @@
-/* keyframe menu*/
+@keyframes heart-filling
+{
+ from {
+  transform: translateY(0%)
+ }
+ to {
+  transform: translateY(100%)
+ }
+}
+
+
+/*keyframe menu*/
 @keyframes appear
 {
     0% {
@@ -9,16 +20,18 @@
       transform: translateY(0);
       opacity: 1;
     }
-  }
+}
 
-  @keyframes slidinleft
-  {
-    0%{
-      transform: translateX(0%);
-      opacity: 0;
+@keyframes slide-to-left
+{
+  0%{
+    transform: translateX(-15%);
+    margin-right: -5%;
+    opacity: 0;
     }
-    25%{
-      transform: translateX(25%);
-      opacity: 1;
+  100%{
+    transform: translateX(5);
+    margin-right: 0%;
+    opacity: 1;
     }
-  }
+}

@@ -117,15 +117,3 @@ h3
     margin-bottom: 1px;
     margin-right: 16px;
 }
-
-.fa-solid
-{
-    font-weight: 400px;
-&:hover{
-        color: transparent;
-        background-clip: text;
-        background-image: linear-gradient(to bottom, $colour-secondary, $colour-primary);
-        transition-duration: 1s;
-        opacity: 1;
-}
-}
