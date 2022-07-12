@@ -385,6 +385,7 @@ h3 {
   background-color: #99E2D0;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
+  animation: rotative;
 }
 .recipecard:hover .recipecard_confirm {
   display: flex;
@@ -399,6 +400,10 @@ h3 {
   justify-content: space-between;
   height: 50px;
   text-overflow: ellipsis;
+}
+
+.fa-circle-check {
+  animation: rotative 1s;
 }
 
 .fct {
@@ -586,6 +591,14 @@ h3 {
     transform: translateX(5);
     margin-right: 0%;
     opacity: 1;
+  }
+}
+@keyframes rotative {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
