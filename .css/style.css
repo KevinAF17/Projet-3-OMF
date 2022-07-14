@@ -149,6 +149,10 @@ h3 {
   margin-right: 16px;
 }
 
+.fa-utensils, .fa-handshake-angle {
+  margin-right: 4px;
+}
+
 .btn {
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
@@ -200,6 +204,7 @@ h3 {
   margin-left: 97.5px;
   margin-bottom: 20px;
   margin-right: 15px;
+  z-index: 3;
   cursor: pointer;
 }
 .btn2_btn2-txt {
@@ -283,7 +288,7 @@ h3 {
   flex-direction: column;
   position: relative;
   background-color: #f6f6f6;
-  z-index: 1;
+  z-index: 0;
 }
 .cartes-menus_background-img {
   width: 100%;
@@ -316,7 +321,7 @@ h3 {
   margin-left: 10px;
   margin-right: 10px;
   width: 100%;
-  animation: appear 1.65s both;
+  animation: appear 2.5s both;
   animation-fill-mode: both;
   transform: scale(0);
   transition-delay: 3s;
@@ -325,7 +330,7 @@ h3 {
   margin-left: 10px;
   margin-right: 10px;
   width: 100%;
-  animation: appear 2s both;
+  animation: appear 2.9s both;
   animation-fill-mode: both;
   transform: scale(0);
   transition-delay: 3s;
@@ -334,7 +339,7 @@ h3 {
   margin-left: 10px;
   margin-right: 10px;
   width: 100%;
-  animation: appear 2.5s both;
+  animation: appear 3.3s both;
   animation-fill-mode: both;
   transform: scale(0);
   transition-delay: 3s;
@@ -555,13 +560,6 @@ h3 {
   background-color: #99E2D0;
 }
 
-.loading {
-  width: 100%;
-  height: 75px;
-  display: flex;
-  color: black;
-}
-
 .footerOmF {
   width: 100%;
   background-color: black;
@@ -616,37 +614,37 @@ h3 {
 .chrg .loading {
   width: 100%;
   height: 100%;
-  animation: stop-and-go 6s;
+  animation: stop-and-go 7s;
   display: flex;
   position: fixed;
   justify-content: space-evenly;
   align-items: center;
-  z-index: 9999;
+  z-index: -1;
 }
 
 .chrg .loading_pillars--1 {
   width: 20px;
   height: 75px;
   background-color: #9356DC;
-  animation: loader 1000ms backwards;
+  animation: loader 900ms backwards;
   animation-fill-mode: both;
-  animation-delay: 200ms;
+  animation-delay: 150ms;
 }
 
 .chrg .loading_pillars--2 {
   width: 20px;
   height: 75px;
   background-color: #FF79DA;
-  animation: loader 1000ms backwards;
+  animation: loader 900ms backwards;
   animation-fill-mode: both;
-  animation-delay: 350ms;
+  animation-delay: 300ms;
 }
 
 .chrg .loading_pillars--3 {
   width: 20px;
   height: 75px;
   background-color: #99E2D0;
-  animation: loader 1000ms backwards;
+  animation: loader 900ms backwards;
   animation-fill-mode: both;
   animation-delay: 450ms;
 }
@@ -655,7 +653,7 @@ h3 {
   width: 20px;
   height: 75px;
   background-color: #9356DC;
-  animation: loader 1000ms backwards;
+  animation: loader 900ms backwards;
   animation-fill-mode: both;
   animation-delay: 600ms;
 }
@@ -664,7 +662,7 @@ h3 {
   width: 20px;
   height: 75px;
   background-color: #FF79DA;
-  animation: loader 1000ms backwards;
+  animation: loader 900ms backwards;
   animation-fill-mode: both;
   animation-delay: 750ms;
 }
@@ -673,19 +671,46 @@ h3 {
   width: 20px;
   height: 75px;
   background-color: #99E2D0;
-  animation: loader 1000ms backwards;
+  animation: loader 900ms backwards;
   animation-fill-mode: both;
-  animation-delay: 950ms;
+  animation-delay: 900ms;
+}
+
+.chrg .loading_pillars--7 {
+  width: 20px;
+  height: 75px;
+  background-color: #9356DC;
+  animation: loader 900ms backwards;
+  animation-fill-mode: both;
+  animation-delay: 1050ms;
+}
+
+.chrg .loading_pillars--8 {
+  width: 20px;
+  height: 75px;
+  background-color: #FF79DA;
+  animation: loader 900ms backwards;
+  animation-fill-mode: both;
+  animation-delay: 1200ms;
+}
+
+.chrg .loading_pillars--9 {
+  width: 20px;
+  height: 75px;
+  background-color: #99E2D0;
+  animation: loader 900ms backwards;
+  animation-fill-mode: both;
+  animation-delay: 1350ms;
 }
 
 @keyframes stop-and-go {
   from {
     background: white;
-    opacity: 1;
+    z-index: 2;
   }
   to {
     background: none;
-    opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes loader {
