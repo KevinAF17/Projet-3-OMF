@@ -17,6 +17,11 @@ p
 {
     font-size: 0.8rem;
     margin-left: 20px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    @media screen and (min-width: 1290px) and (max-width: 2200px){
+        font-size: 1.4rem;
+    }
 }
 .p-restos
 {
@@ -24,6 +29,11 @@ p
     font-weight: 550;
     margin-left: 16px;
     margin-bottom: 16px;
+    @media screen and (min-width: 1290px) and (max-width: 2200px){
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
 }
 
 .p-ticket
@@ -52,6 +62,9 @@ h2
 {
     font-family: "Roboto";
     font-size: 1.8rem;
+    @media screen and (min-width: 1290px) and (max-width: 2200px){
+        text-align: center;
+    }
 }
 
 h3
@@ -60,6 +73,10 @@ h3
     font-size: 1.5rem;
     padding-bottom: 8px ;
     margin-left: 20px;
+    @media screen and (min-width: 1290px) and (max-width: 2200px){
+        text-align: center;
+        margin-bottom: 40px;
+    }
 }
 
 .OmfTitre1
@@ -116,6 +133,8 @@ h3
     margin-top: 1px;
     margin-bottom: 1px;
     margin-right: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .fa-utensils, .fa-handshake-angle

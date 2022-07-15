@@ -25,13 +25,11 @@
 @keyframes slide-to-left
 {
   0%{
-    transform: translateX(-15%);
-    margin-right: -5%;
+    transform: translateX(100%);
     opacity: 0;
     }
   100%{
-    transform: translateX(5);
-    margin-right: 0%;
+    transform: translateX(0%);
     opacity: 1;
     }
 }

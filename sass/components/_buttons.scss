@@ -34,11 +34,15 @@
         border-radius: 16px;
         margin-bottom: 32px;
         cursor: pointer;
+        @media screen and (min-width: 1290px) and (max-width: 2200px){
+            width: 600px;
+        }
 }
 
 .btn2
 {
     background: linear-gradient($colour-secondary, $colour-primary);
+    background-color: #f6f6f6;
     color: white;
     font-weight: 500;
     padding: 3px;
