@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@media screen and (min-width: 760px) and (max-width: 1289px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
 body {
   margin: 0px;
   width: 100%;
@@ -9,6 +15,11 @@ body {
   flex-direction: column;
   color: black;
   overflow-x: hidden;
+}
+@media screen and (min-width: 1290px) and (max-width: 2200px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 ul, li {
@@ -43,6 +54,11 @@ a {
 .space_2 {
   margin: 20px;
 }
+@media screen and (min-width: 760px) and (max-width: 1289px) {
+  .space {
+    display: none;
+  }
+}
 
 p {
   font-family: "Roboto", "sans serif";
@@ -60,6 +76,11 @@ p {
   margin-left: 20px;
   margin-top: 1px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 760px) and (max-width: 1289px) {
+  .p-ft {
+    font-size: 1.1rem;
+  }
 }
 @media screen and (min-width: 1290px) and (max-width: 2200px) {
   .p-ft {
@@ -98,11 +119,18 @@ h1 {
   padding-bottom: 8px;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
   font-family: "Roboto";
   font-size: 1.8rem;
+}
+@media screen and (min-width: 760px) and (max-width: 1289px) {
+  h2 {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1290px) and (max-width: 2200px) {
   h2 {
@@ -115,6 +143,12 @@ h3 {
   font-size: 1.5rem;
   padding-bottom: 8px;
   margin-left: 20px;
+}
+@media screen and (min-width: 760px) and (max-width: 1289px) {
+  h3 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 1290px) and (max-width: 2200px) {
   h3 {
@@ -277,6 +311,7 @@ h3 {
   width: 9rem;
   font-size: 1rem;
   margin-left: 5px;
+  outline: none;
 }
 .header_input-accueil::placeholder {
   margin-left: 5px;
@@ -308,9 +343,18 @@ h3 {
   margin-left: 30px;
   font-size: 2.5rem;
 }
+@media screen and (min-width: 560px) and (max-width: 1289px) {
+  .header-menus_title {
+    width: 82.5%;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1290px) and (max-width: 2200px) {
   .header-menus_title {
-    margin-left: 800px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 .header-menus_icons {
@@ -506,8 +550,18 @@ h3 {
 .command {
   display: flex;
   background: #f6f6f6;
-  width: 100%;
+  width: 75%;
   justify-content: center;
+}
+@media screen and (min-width: 760px) and (max-width: 1289px) {
+  .command {
+    width: 87.5%;
+  }
+}
+@media screen and (min-width: 1290px) and (max-width: 2200px) {
+  .command {
+    width: 100%;
+  }
 }
 
 .fa-circle-check {
@@ -577,6 +631,14 @@ h3 {
   margin-left: 3.5px;
   margin-right: 1.5px;
 }
+@media screen and (min-width: 760px) and (max-width: 1289px) {
+  .fct_ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 @media screen and (min-width: 1290px) and (max-width: 2200px) {
   .fct_ul {
     display: flex;
@@ -604,10 +666,19 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   width: 330px;
-  margin-left: 16px;
-  margin-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 6px;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 760px) and (max-width: 1289px) {
+  .restos_menus-restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+  }
 }
 @media screen and (min-width: 1290px) and (max-width: 2200px) {
   .restos_menus-restaurants {
@@ -625,6 +696,11 @@ h3 {
   height: 210px;
   border-radius: 16px;
   background-color: white;
+}
+@media screen and (min-width: 760px) and (max-width: 1289px) {
+  .restos_cartes-menus {
+    margin-bottom: 15px;
+  }
 }
 
 .menus_img {
@@ -709,12 +785,20 @@ h3 {
   background-color: black;
   color: white;
 }
-@media screen and (min-width: 1290px) and (max-width: 2200px) {
+@media screen and (min-width: 760px) and (max-width: 1289px) {
   .footerOmF_f-help {
     flex-direction: row;
     justify-content: space-between;
-    width: 95%;
+    width: 90%;
     margin: 10px 0 15px 25px;
+  }
+}
+@media screen and (min-width: 1290px) and (max-width: 2200px) {
+  .footerOmF_f-help {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 10px 0 15px 5px;
   }
 }
 

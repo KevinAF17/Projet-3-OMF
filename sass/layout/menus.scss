@@ -5,7 +5,7 @@
    background-color: #f6f6f6;
    z-index: 0;
    @media screen and (min-width: 1290px) and (max-width: 2200px){
-      align-items: center ;
+      align-items: center;
    }
    &_background-img{
     width: 100%;
@@ -176,8 +176,14 @@
 .command{
    display: flex;
    background: #f6f6f6;
-   width: 100%;
+   width: 75%;
    justify-content: center;
+   @media screen and (min-width: 760px) and (max-width: 1289px){
+      width: 87.5%;
+   }
+   @media screen and (min-width: 1290px) and (max-width: 2200px){
+      width: 100%;
+   }
 }
 
 .fa-circle-check

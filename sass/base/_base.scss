@@ -1,3 +1,9 @@
+html{
+    @media screen and (min-width: 760px) and (max-width: 1289px){
+        overflow-x: hidden;
+    }
+}
+
 body{
     margin: 0px;
     width: 100%;
@@ -6,6 +12,9 @@ body{
     flex-direction: column;
     color: black;
     overflow-x: hidden;
+    @media screen and (min-width: 1290px) and (max-width: 2200px){
+        overflow-x: hidden;
+    }
 }
 
 ul, li{
@@ -39,5 +48,9 @@ a{
     margin: 10px;
     &_2{
         margin: 20px;
+    }
+    @media screen and (min-width: 760px) and (max-width: 1289px)
+    {
+        display: none;
     }
 }

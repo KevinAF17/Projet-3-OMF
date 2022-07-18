@@ -19,6 +19,9 @@ p
     margin-left: 20px;
     margin-top: 1px;
     margin-bottom: 10px;
+    @media screen and (min-width: 760px) and (max-width: 1289px){
+        font-size: 1.1rem;
+    }
     @media screen and (min-width: 1290px) and (max-width: 2200px){
         font-size: 1.4rem;
     }
@@ -56,12 +59,17 @@ h1
     padding-bottom: 8px;
     margin-top: 0px;
     margin-bottom: 0px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2
 {
     font-family: "Roboto";
     font-size: 1.8rem;
+    @media screen and (min-width: 760px) and (max-width: 1289px){
+        text-align: center;
+    }
     @media screen and (min-width: 1290px) and (max-width: 2200px){
         text-align: center;
     }
@@ -73,6 +81,10 @@ h3
     font-size: 1.5rem;
     padding-bottom: 8px ;
     margin-left: 20px;
+    @media screen and (min-width: 760px) and (max-width: 1289px){
+        text-align: center;
+        margin-bottom: 40px;
+    }
     @media screen and (min-width: 1290px) and (max-width: 2200px){
         text-align: center;
         margin-bottom: 40px;
