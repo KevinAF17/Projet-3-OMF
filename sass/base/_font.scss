@@ -122,6 +122,9 @@ h3
     margin-bottom: 1px;
     margin-left: 16px;
     margin-right: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
 }
 
 .p-menus-titre2
@@ -140,7 +143,9 @@ h3
 .p-menus-txt2
 {
     font-family: "Roboto";
+    text-align: right;
     font-weight: 500;
+    width: 10%;
     font-size: 12px;
     margin-top: 1px;
     margin-bottom: 1px;
