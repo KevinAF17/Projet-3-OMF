@@ -25,14 +25,14 @@
 @keyframes slide-to-left
 {
   0%{
-    transform: translateX(100%);
+    transform: translateX(60px);
     opacity: 0;
-    margin-right: -15px;
+    width: 0px;
     }
   100%{
-    transform: translateX(0%);
+    transform: translateX(0);
     opacity: 1;
-    margin-right: 0px;
+    width: 70px;
     }
 }
 
