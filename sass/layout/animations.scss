@@ -26,12 +26,10 @@
 {
   0%{
     transform: translateX(60px);
-    opacity: 0;
     width: 0px;
     }
   100%{
     transform: translateX(0);
-    opacity: 1;
     width: 70px;
     }
 }

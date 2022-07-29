@@ -1,14 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  overflow-x: hidden;
+}
 @media screen and (min-width: 760px) and (max-width: 1289px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 1290px) and (max-width: 2200px) {
   html {
     overflow-x: hidden;
   }
 }
 
 body {
-  margin: 0px;
+  margin: auto;
   width: 100%;
   padding: 0.5px;
   display: flex;
@@ -124,16 +132,25 @@ h1 {
 }
 
 h2 {
+  font-family: "Shrikhand";
+  font-size: 1.6rem;
+  margin: 17.5px -20px -15px -15px;
+}
+
+.h2-bis {
   font-family: "Roboto";
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  margin-left: 1px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 760px) and (max-width: 1289px) {
-  h2 {
+  .h2-bis {
     text-align: center;
   }
 }
 @media screen and (min-width: 1290px) and (max-width: 2200px) {
-  h2 {
+  .h2-bis {
     text-align: center;
   }
 }
@@ -179,14 +196,13 @@ h3 {
 }
 
 .p-menus-txt {
+  display: flex;
   font-family: "Roboto";
   font-size: 12px;
   margin-top: 1px;
   margin-bottom: 1px;
   margin-left: 16px;
   margin-right: 16px;
-  overflow: hidden;
-  text-overflow: ellipsis;
   width: 90%;
 }
 
@@ -194,6 +210,8 @@ h3 {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto";
+  white-space: nowrap;
+  width: 75%;
   font-size: 16px;
   font-weight: 550;
   padding-top: 5px;
@@ -211,8 +229,6 @@ h3 {
   margin-top: 1px;
   margin-bottom: 1px;
   margin-right: 16px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .fa-utensils, .fa-handshake-angle {
@@ -247,6 +263,7 @@ h3 {
 .btn-list {
   background-color: #f6f6f6;
   color: black;
+  box-shadow: 0px 0px 5px rgb(199, 197, 197);
   font-size: 0.8rem;
   width: 340px;
   height: 65px;
@@ -335,11 +352,14 @@ h3 {
 .header-restos {
   font-family: "Roboto";
   font-size: 1.8rem;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .header-menus {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .header-menus_title {
   display: flex;
@@ -440,6 +460,7 @@ h3 {
 }
 .cartes-menus_lunches {
   background-color: #f6f6f6;
+  width: 100%;
   height: 700px;
 }
 @media screen and (min-width: 1290px) and (max-width: 2200px) {
@@ -528,6 +549,7 @@ h3 {
   flex-direction: column;
   background-color: white;
   overflow: hidden;
+  text-overflow: ellipsis;
   width: 95%;
   height: 50px;
   margin-bottom: 10px;
@@ -545,19 +567,21 @@ h3 {
   background-color: #99E2D0;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
+  z-index: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .recipecard:hover .recipecard_confirm {
   display: flex;
   margin-right: 0px;
   animation: slide-to-left 0.1s linear both;
   animation-duration: 0.5s;
+  z-index: 3;
 }
 .recipecard_txt {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow: none;
-  text-overflow: ellipsis;
   height: 50px;
   margin-right: 0px;
 }
@@ -593,6 +617,7 @@ h3 {
 .fct_titre-menus {
   margin-left: 8.5px;
   margin-right: 1.5px;
+  margin-top: 20px;
   font-family: "Roboto";
   font-size: 18px;
   font-weight: 550;
@@ -642,9 +667,13 @@ h3 {
   }
 }
 .fct_ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 90px;
   margin-left: 3.5px;
   margin-right: 1.5px;
+  margin-top: 30px;
 }
 @media screen and (min-width: 760px) and (max-width: 1289px) {
   .fct_ul {
@@ -839,12 +868,10 @@ h3 {
 @keyframes slide-to-left {
   0% {
     transform: translateX(60px);
-    opacity: 0;
     width: 0px;
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
     width: 70px;
   }
 }

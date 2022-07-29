@@ -1,11 +1,16 @@
-html{
+html
+{
+    overflow-x: hidden;
     @media screen and (min-width: 760px) and (max-width: 1289px){
+        overflow-x: hidden;
+    }
+    @media screen and (min-width: 1290px) and (max-width: 2200px){
         overflow-x: hidden;
     }
 }
 
 body{
-    margin: 0px;
+    margin: auto;
     width: 100%;
     padding: 0.5px;
     display: flex;

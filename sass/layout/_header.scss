@@ -48,12 +48,15 @@
 {
     font-family: "Roboto";
     font-size: 1.8rem;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .header-menus
 {
     display: flex;
     flex-direction: row;
+    width: 100%;
     &_title{
         display: flex;
         margin-left: 30px;

@@ -65,8 +65,18 @@ h1
 
 h2
 {
+    font-family: "Shrikhand";
+    font-size: 1.6rem;
+    margin: 17.5px -20px -15px -15px;
+}
+
+.h2-bis
+{
     font-family: "Roboto";
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    margin-left: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     @media screen and (min-width: 760px) and (max-width: 1289px){
         text-align: center;
     }
@@ -116,14 +126,13 @@ h3
 
 .p-menus-txt
 {
+    display: flex;
     font-family: "Roboto";
     font-size: 12px;
     margin-top: 1px;
     margin-bottom: 1px;
     margin-left: 16px;
     margin-right: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
     width: 90%;
 }
 
@@ -132,6 +141,8 @@ h3
     display: flex;
     justify-content: space-between;
     font-family: "Roboto";
+    white-space: nowrap;
+    width: 75%;
     font-size: 16px;
     font-weight: 550;
     padding-top: 5px;
@@ -150,8 +161,6 @@ h3
     margin-top: 1px;
     margin-bottom: 1px;
     margin-right: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .fa-utensils, .fa-handshake-angle
