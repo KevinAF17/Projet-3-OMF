@@ -4,7 +4,7 @@
   "description": "Ce repository contient tous les fichiers nécessaires pour la bonne réalisation du projet 3. Suggestions de modification et conseils (bienveillants bien sûr) sont les bienvenus.\r Feel free to join.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./Public/css/style.css"
   },
   "repository": {
     "type": "git",

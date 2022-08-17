@@ -265,7 +265,7 @@ h3 {
   color: black;
   box-shadow: 0px 0px 5px rgb(199, 197, 197);
   font-size: 0.8rem;
-  width: 340px;
+  width: 90%;
   height: 65px;
   border-radius: 16px;
   margin-bottom: 32px;
@@ -413,7 +413,7 @@ h3 {
   width: 100%;
   border-radius: 40px 40px 0 0;
   margin: -50px 0 25px;
-  padding-top: 10px;
+  padding-top: 14.5px;
   background-color: #f6f6f6;
 }
 .cartes-menus_h1-header {
@@ -709,7 +709,7 @@ h3 {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  width: 330px;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 6px;
@@ -736,7 +736,7 @@ h3 {
   flex-direction: column;
   text-decoration: none;
   color: black;
-  width: 330px;
+  width: 290px;
   height: 210px;
   border-radius: 16px;
   background-color: white;
@@ -748,7 +748,7 @@ h3 {
 }
 
 .menus_img {
-  width: 330px;
+  width: 290px;
   height: 150px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -756,7 +756,7 @@ h3 {
   object-fit: cover;
 }
 .menus_img2 {
-  width: 330px;
+  width: 290px;
   height: 150px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -771,7 +771,7 @@ h3 {
   cursor: pointer;
   font-size: 25px;
   margin-top: -29px;
-  margin-left: 290px;
+  margin-left: 255px;
   padding: 0px;
   width: 25px;
   color: black;
@@ -790,7 +790,6 @@ h3 {
   opacity: 0.001;
 }
 .containers-icon2:hover {
-  animation: heart-filling;
   color: #D86CDB;
   transition-duration: 1.5s;
   opacity: 2;
@@ -804,7 +803,7 @@ h3 {
   align-items: center;
   text-align: center;
   margin: 0px;
-  left: 235px;
+  left: 195px;
   top: 15px;
   width: 80px;
   height: 30px;
